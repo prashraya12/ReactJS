@@ -11,24 +11,26 @@
       crossorigin
     ></script>
 
-    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>React ⚛️</title>
   </head>
   <body>
 
       <div id="root"></div>
-      <script type="text/javascript">
-        let heading =  React.createElement(
-          "h1",
-          null,
-          "Getting started with react"
-          )
-
+      <script type="text/babel">
+        let robot = "😊";
+        let cowboy= "❤️";
+        let name = "prashraya";
+       
         ReactDOM.render(
-         heading,
+         <ul>
+            <li>{robot}</li>
+            <li>{cowboy}</li>
+            <li>{name.toUpperCase()}</li>
+        </ul>,
           document.getElementById("root")
 
-        )
+        );
 
       </script>
   </body>
